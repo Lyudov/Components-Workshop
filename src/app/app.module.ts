@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { UserModule } from './user/user.module';
 import { ThemeModule } from './theme/theme.module';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { CurrentThemeComponent } from './theme/current-theme/current-theme.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     ThemesListComponent,
     PostsListComponent,
     HomeComponent,
-    WelcomeComponent
+    WelcomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,9 +31,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
     CoreModule,
     SharedModule,
     UserModule,
-    ThemeModule
+    ThemeModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
